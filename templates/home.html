@@ -1,0 +1,190 @@
+{% extends "layout.html" %} 
+{% block content %}
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        
+
+        <!--==================== NEW ====================-->
+        <!--==================== NEW ====================-->
+        <section class="new section" id="new" style="padding: 4rem 0 4rem">
+            <h2 class="section__title">
+                About Water on earth
+            </h2>
+            <div style="margin: 0 90px 0 90px;">
+                    <h5>
+                    One factor in estimating when water appeared on Earth is that water is
+                    continually being lost to
+                    space. H2O molecules in the atmosphere are broken up by photolysis, and the resulting free hydrogen
+                    atoms can sometimes escape Earth's gravitational pull (see: Atmospheric escape). When the Earth was
+                    younger and less massive, water would have been lost to space more easily. 
+                    <br>
+                    Lighter elements like
+                    hydrogen and helium are expected to leak from the atmosphere continually, but isotopic ratios of
+                    heavier noble gases in the modern atmosphere suggest that even the heavier elements in the early
+                    atmosphere were subject to significant losses.
+                    <br>
+                    In particular, xenon is useful for calculations of
+                    water loss over time. Not only is it a noble gas (and therefore is not removed from the atmosphere
+                    through chemical reactions with other elements), but comparisons between the abundances of its nine
+                    stable isotopes in the modern atmosphere reveal that the Earth lost at least one ocean of water
+                    early in its history, between the Hadean and Archean eras.
+
+                    </h5>
+            </div>
+        </section>
+
+        <!--==================== COLLECTION ====================-->
+        <div>
+            <div class="counting">
+                <div class="counting__container box-1">
+                    <div class="inside">
+                        <img src="/static/img/hand-washing-water.jpg" height="265px" width="320px" alt="">
+                    </div>
+                </div>
+                <div class="counting__container box-2">
+
+                    <div class="inside">
+                        <img src="/static/img/pot.jpg" height="265px" width="320px" alt="">
+                    </div>
+                </div>
+                <div class="counting__container box-3">
+
+                    <div class="inside">
+                        <img src="/static/img/waterrrr.jpg" height="265px" width="320px" alt="">
+                    </div>
+                </div>
+                <div class="counting__container box-4">
+
+                    <div class="inside">
+                        <img src="/static/img/water sanitation.jpg" height="265px" width="320px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="paragraph">We are a non-profit organization focused on <strong>alleviating the global water
+                        crisis</strong> by bringing clean
+                    water access and water-health and hygiene education programs to the world’s most impoverished
+                    communities.
+
+                    Our programs are focused on schools, children, and rural communities across the Asia-Pacific region
+                    and Latin America. Join us, and together we can abolish global water poverty one community at a
+                    time.</p>
+            </div>
+        </div>
+
+        <!--==================== PRODUCTS ====================-->
+        <div id="water123">
+        <div class="water_quality" style="margin-top: 100px">
+            <h2 class="section__title " style="font-size: 45px;">
+                Water Quality Parameters
+            </h2>
+            <div>
+                <div class="counting our-works">
+                    <div class="counting__container box-1">
+                        <h3>Dissolved Oxygen</h3>
+                        <div class="inside">
+                            <h4>Range</h4>
+                            <p>0 – 500.0% / 0 – 50.00 mg/L</p>
+                        </div>
+                        <a href="{{url_for('specs')}}#dis-oxygen">
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div></a>
+                    </div>
+                    <div class="counting__container box-2">
+                        <h3>Biological Oxygen Demand</h3>
+                        <div class="inside">
+                            <h4>Range</h4>
+                            <p>1-9 ppm</p>
+                        </div>
+                        <a href="{{url_for('specs')}}#bod">
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div></a>
+                    </div>
+                    <div class="counting__container box-3">
+                        <h3>Turbidity</h3>
+                        <div class="inside">
+                            <h4>Range</h4>
+                            <p><1 NTU / >1000 NTU</1></p>
+                        </div>
+                        <a href="{{url_for('specs')}}#turb">
+                        <div>
+                            <button class="btn btn-primary" >Learn More</button>
+                        </div></a></a>
+                    </div>
+                    <div class="counting__container box-4">
+                        <h3>pH</h3>
+                        <div class="inside">
+                            <h4>Range</h4>
+                           <p>0 – 14 pH / ± 625mV</p>
+                        </div>
+                        <a href="{{url_for('specs')}}#ph">
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="counting our-works">
+                    <div class="counting__container box-1">
+                        <h3>Solids</h3>
+                        <div class="inside">
+                            <h4>Range</h4>
+                            <p>freshwater: <1500 mg/L TDS
+                                <br> brackish water: 1500–5000 mg/L TDS;
+                           
+                           saline water: >5000 mg/L TDS
+                            </p>
+                        </div>
+                        <a href="{{url_for('specs')}}#solid">
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div></a>
+                    </div>
+                    <div class="counting__container box-2">
+                        <h3>Temperature</h3>
+                        <div class="inside">
+                            <h4>Range</h4>
+                            <p>-5°C – +70°C</p>
+                        </div>
+                        <a href="{{url_for('specs')}}#temperature">
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------filtration------------------------> 
+<div id="water1234">
+    <div class="water_qualityy" style="margin-top: 100px">
+        <h2 class="section__title " style="font-size: 45px;">
+            Water Treatment Techniques
+        </h2>
+        <div>
+            <div class="counting our-works">
+               <img src="/static/img/treatment.jpeg" width="800px" height="500px" alt="">
+        </div>
+    </div>
+    <div class="counting our-works"><h4 style="width: 1200px; margin: auto; padding: 20px; height: auto;">How Water Treatment Plants Make Water Safe?
+        <br>
+        Public drinking water systems use different water treatment methods to provide safe drinking water for their communities. Public water systems often use a series of water treatment steps that include coagulation, flocculation, sedimentation, filtration, and disinfection.</h4>
+    </div>
+        <div class="counting our-works">
+            <img src="/static/img/processs.jpg" alt="">
+        </div>
+        <div class="counting our-works">
+            <h3>For more info
+                <button class="btn btn-primary">
+            <a href="{{url_for('filter')}}" style="color: white; text-decoration: none;">Click here</button></a></h3>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

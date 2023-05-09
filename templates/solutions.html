@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+      }
+      tr {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 1px;
+        width: 100%;
+        /* width: 1100px; margin: auto; padding: 20px */
+      }
+      th {
+        border: 1px solid #dddddd;
+        padding: 1px;
+        /* width: 70%; */
+        width: 70%;
+        text-align: center;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body class="body-111">
+    <h1>Data Submitted !!</h1>
+    <h2>More information about the area you searched:</h2>
+   <p>
+    {% for links in htmlString %}
+        <a href="{{links}}">{{links}}</a><br>
+    {%endfor%}
+   </p>
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <!-- <a href="#">b</a><br />
+    <a href="#">c</a><br />
+    <a href="#">d</a><br />
+    <a href="#">e</a><br />
+    <a href="#">f</a><br />
+    <a href="#">g</a><br />
+    <a href="#">h</a><br />
+    <a href="#">i</a><br /> -->
+    <h2>To find the required map, explore the given links:</h2>
+        <p>
+            <br>{{cityString}}
+            <br>{{countryString}}</p>
+        </p>
+    <!-- <h3>To View Map: 
+    <a href="Click here">Click here</a>
+</h3>
+
+<h3>To check water quality: 
+    <a href="Click here">Click here</a>
+</h3>
+<h3>To check for water stations in the region: 
+    <a href="Click here">Click here</a>
+</h3>
+<h3>To get information about drinking water stations: 
+    <a href="Click here">Click here</a>
+</h3>
+<h3>To get a QR code about scientific data of the water body: 
+    <a href="Click here">Click here</a>
+</h3> -->
+    <table>
+      <tr>
+        <th><h3>To View Map:</h3></th>
+        <th>
+          <h3>
+            <a href="/map">Click here</a>
+          </h3>
+        </th>
+      </tr>
+      <tr>
+        <th><h3>To check water quality:</h3></th>
+        <th>
+          <h3>
+            <a href="/prediction">Click here</a>
+          </h3>
+        </th>
+      </tr>
+      <tr>
+        <th><h3>To check for water stations in the region:</h3></th>
+        <th>
+          <h3>
+            <a href="/waterStation">Click here</a>
+          </h3>
+        </th>
+      </tr>
+      <tr>
+        <th><h3>To get information about waste water management stations:</h3></th>
+        <th>
+          <h3>
+            <a href="/drinkingWaterFinder">Click here</a>
+          </h3>
+        </th>
+      </tr>
+      <tr>
+        <th><h3>To get information about the nearest water sources click here :</h3></th>
+        <th>
+          <h3>
+            <a href="{{url_str}}">Click here</a>
+          </h3>
+        </th>
+      </tr>
+
+      <tr>
+        <th><h3>To view all the water bodies in the region:</h3></th>
+        <th>
+          <h3>
+            <a href="/generalWaterBodyFile">Click here</a>
+          </h3>
+        </th>
+      </tr>
+
+      <tr>
+        <th><h3>The routes to the different water sources are :</h3></th>
+        <th>
+          <h3>
+            {% for r in route_urls %}
+              <a href="{{r}}">Click here</a><br>
+            {%endfor%}
+          </h3>
+        </th>
+      </tr>
+
+      <tr>
+        <th><h3>The routes to the different water sources according to increasing distances are :</h3></th>
+        <th>
+          <h3>
+            {% for r in sortedURLList %}
+              <a href="{{r}}">Click here</a><br>
+            {%endfor%}
+          </h3>
+        </th>
+      </tr>
+
+      <tr>
+        <th>
+          <h3>To get a QR code about scientific data of the water body:</h3>
+        </th>
+        <th>
+          <h3>
+            <a href="/index">Click here</a>
+          </h3>
+        </th>
+      </tr>
+    </table>
+  </body>
+
+  
+
+</html>
+

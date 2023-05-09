@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_678a8024e98b956224f5e9b89c4c4b5b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_678a8024e98b956224f5e9b89c4c4b5b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_678a8024e98b956224f5e9b89c4c4b5b = L.map(
+                "map_678a8024e98b956224f5e9b89c4c4b5b",
+                {
+                    center: [23.3700501, 85.3250387],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f8350bb9e34afde92889418a6815b3dc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_678a8024e98b956224f5e9b89c4c4b5b);
+        
+    
+            var circle_marker_2e9d004397ee49b4815b94af601d355a = L.circleMarker(
+                [23.285564, 85.294371],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_678a8024e98b956224f5e9b89c4c4b5b);
+        
+    
+        var popup_1694344b5f980745b6f64a2ef560caa0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de4fc4f1e7d1592a4a3c7158261fcf7e = $(`<div id="html_de4fc4f1e7d1592a4a3c7158261fcf7e" style="width: 100.0%; height: 100.0%;">Wastewater treatment plant 1</div>`)[0];
+                popup_1694344b5f980745b6f64a2ef560caa0.setContent(html_de4fc4f1e7d1592a4a3c7158261fcf7e);
+            
+        
+
+        circle_marker_2e9d004397ee49b4815b94af601d355a.bindPopup(popup_1694344b5f980745b6f64a2ef560caa0)
+        ;
+
+        
+    
+    
+            var circle_marker_2d5cffd72bff5534f2840372d40bff8a = L.circleMarker(
+                [23.285561, 85.293669],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_678a8024e98b956224f5e9b89c4c4b5b);
+        
+    
+        var popup_7211a13caf4841262ca5cd6d800886f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f239e3aa22a8e62626bd9a012cf89ed = $(`<div id="html_5f239e3aa22a8e62626bd9a012cf89ed" style="width: 100.0%; height: 100.0%;">Wastewater treatment plant 2</div>`)[0];
+                popup_7211a13caf4841262ca5cd6d800886f9.setContent(html_5f239e3aa22a8e62626bd9a012cf89ed);
+            
+        
+
+        circle_marker_2d5cffd72bff5534f2840372d40bff8a.bindPopup(popup_7211a13caf4841262ca5cd6d800886f9)
+        ;
+
+        
+    
+    
+            var circle_marker_06db18ad72a586e60036b8d05287cc78 = L.circleMarker(
+                [23.286856, 85.293661],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_678a8024e98b956224f5e9b89c4c4b5b);
+        
+    
+        var popup_efe7f010b76024c0e149a4a72fd646af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7ae77428eb3dadaeaeece4482508030 = $(`<div id="html_f7ae77428eb3dadaeaeece4482508030" style="width: 100.0%; height: 100.0%;">Wastewater treatment plant 3</div>`)[0];
+                popup_efe7f010b76024c0e149a4a72fd646af.setContent(html_f7ae77428eb3dadaeaeece4482508030);
+            
+        
+
+        circle_marker_06db18ad72a586e60036b8d05287cc78.bindPopup(popup_efe7f010b76024c0e149a4a72fd646af)
+        ;
+
+        
+    
+    
+            var circle_marker_a201d47eedcc784765c610985e0bd4e1 = L.circleMarker(
+                [23.28686, 85.294363],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_678a8024e98b956224f5e9b89c4c4b5b);
+        
+    
+        var popup_092fe018aa39850747464f8a32971f79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6512d0cb6a8b692f47195f6a6b415c1d = $(`<div id="html_6512d0cb6a8b692f47195f6a6b415c1d" style="width: 100.0%; height: 100.0%;">Wastewater treatment plant 4</div>`)[0];
+                popup_092fe018aa39850747464f8a32971f79.setContent(html_6512d0cb6a8b692f47195f6a6b415c1d);
+            
+        
+
+        circle_marker_a201d47eedcc784765c610985e0bd4e1.bindPopup(popup_092fe018aa39850747464f8a32971f79)
+        ;
+
+        
+    
+    
+            var circle_marker_215e77a3198df3fdbb4108bd97940b76 = L.circleMarker(
+                [23.285564, 85.294371],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_678a8024e98b956224f5e9b89c4c4b5b);
+        
+    
+        var popup_ec0bb3e2928039ceb1091da66aa856d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_597ccf0ca134fa6a6a8f35c0c9b034ce = $(`<div id="html_597ccf0ca134fa6a6a8f35c0c9b034ce" style="width: 100.0%; height: 100.0%;">Wastewater treatment plant 5</div>`)[0];
+                popup_ec0bb3e2928039ceb1091da66aa856d0.setContent(html_597ccf0ca134fa6a6a8f35c0c9b034ce);
+            
+        
+
+        circle_marker_215e77a3198df3fdbb4108bd97940b76.bindPopup(popup_ec0bb3e2928039ceb1091da66aa856d0)
+        ;
+
+        
+    
+</script>
+</html>

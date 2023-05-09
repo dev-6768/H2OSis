@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- ==================== Check Water Portable ========================== -->
+<form class="form-1" method="POST" action="{{url_for('predictor')}}">
+    <div class="Water-portable">
+        <div class="portable">
+            <h2 class="section__title" style="margin-top: 213px;">WATER QUALITY TESTING</h2>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11 form-label"><strong>pH</strong> (0-14)</label>
+                        <input type="text" class="form-control" name="phvalue" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Hardness</strong> (mg/L)</label>
+                        <input type="text" class="form-control" name="hardness" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Solids</strong>  (mg/L TDS)</label>
+                        <input type="text" class="form-control" name="solids" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Chloramines</strong>  (mg/L)</label>
+                        <input type="text" class="form-control" name="chloramines" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Sulphate</strong>  (mg/L)</label>
+                        <input type="text" class="form-control" name="sulphates" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Conductivity</strong>  (µmhos/cm)</label>
+                        <input type="text" class="form-control" name="conductivity" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Organic Carbon</strong>(ppm) </label>
+                        <input type="text" class="form-control" name="organiccarbon" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Trihalomethanes</strong> (µg/L)</label>
+                        <input type="text" class="form-control" name="trihalomethanes" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <div class="form-1">
+                    <div class="form-2">
+                        <label for="inputEmail4" class="form-11"><strong>Turbidity</strong>  (NTU)</label>
+                        <input type="text" class="form-control" name="turbidity" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+            <div class="p-1 form-1">
+                <button type="submit" class="btn btn-primary" href="{{url_for('predictor')}}#solution">Submit</button>
+            </div>
+
+            <br />
+            
+            <div class="prediction-water", id="solution">
+                <div class="message">
+                {% if problems %}
+                <div class="alert alert msg" role="alert">
+                    <h3 style="font-family: 'Roboto Slab', serif">{{messege1}}</h3>
+                </div>
+                {%endif%} {% for p in problems %}
+                <div class="alert alert msg" role="alert">
+                    <h2 style="font-family: 'Alkatra', cursive">{{solutions[p]}}</h2>
+                    <br />
+                </div>
+                {% endfor %} {% if deficiency %}
+                <div class="alert alert msg" role="alert">
+                    <h3 style="font-family: 'Roboto Slab', serif">{{messege2}}</h3>
+                </div>
+                {%endif%}
+                <div class="alert alert msg" role="alert">
+                    <h3 style="font-family: 'Roboto Slab', serif">{{messege}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+</form>
+{% endblock %}

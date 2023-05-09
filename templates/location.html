@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block content %}
+
+<!--==================== BRANDS ====================-->
+<div class="search-map">
+  <h2 class="section__title" style="font-size: 45px">
+    Let's Find a Water Sources Near You
+  </h2>
+  <div class="search-box">
+    <div class="container font-effect-outline">
+      <form class="row g-3" method="POST" action="{{url_for('locationApi')}}">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Country</label>
+          <input
+            type="text"
+            name="countryname"
+            class="form-control"
+            id="country"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">City</label>
+          <input type="text" name="cityname" class="form-control" id="city" />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

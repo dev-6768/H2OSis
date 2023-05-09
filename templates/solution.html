@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block content %}
+    <html>
+        <body>Data Submitted. 
+            <br>
+            <p>More information about the area you searched : 
+                <br>{{htmlString}}<br>
+            </p>
+            <p>To view more information about the city and country : 
+                <br>{{cityString}}
+                <br>{{countryString}}</p>
+            <p>To View Map, <a href = "/map">Click here.</a></p>
+            <p>To check for water quality : <a href="/prediction">Check water quality.</a></p>
+            <p>To check for water stations in the region : <a href="/waterStation">Click here.</a></p>
+            <p>To get information about wastewater management stations : <a href="/drinkingWaterFinder">Click here.</a>
+                <p>To get information about water taps : <a href="/waterTapFinder">Click here.</a></p>
+            </p>
+            <p>
+                To get information about the nearest water sources click here : <a href="{{url_str}}">Route Finder</a>
+            </p>
+            <p>To get a QR Code about scientific data of the water body, <a href="/index">Click here.</a></p>
+{% endblock content %}

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eabc4748293ea43f37349645b1d5dfd3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_eabc4748293ea43f37349645b1d5dfd3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_eabc4748293ea43f37349645b1d5dfd3 = L.map(
+                "map_eabc4748293ea43f37349645b1d5dfd3",
+                {
+                    center: [23.3700501, 85.3250387],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d28be30f79ad4a6a0ec2ba9453dba5f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+            var circle_marker_6d7d3946876d2f4b5d0e42b4d63c6af1 = L.circleMarker(
+                [23.3061, 85.0208],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_214b6651c8e13790a7c9e267ac33af21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b8af29ac5de3fc2016b9b87d6bcddff = $(`<div id="html_4b8af29ac5de3fc2016b9b87d6bcddff" style="width: 100.0%; height: 100.0%;">Water Station : Berro</div>`)[0];
+                popup_214b6651c8e13790a7c9e267ac33af21.setContent(html_4b8af29ac5de3fc2016b9b87d6bcddff);
+            
+        
+
+        circle_marker_6d7d3946876d2f4b5d0e42b4d63c6af1.bindPopup(popup_214b6651c8e13790a7c9e267ac33af21)
+        ;
+
+        
+    
+    
+            var circle_marker_75f4d5fd61d9aff5f8aba502d53da3b2 = L.circleMarker(
+                [23.3878, 85.3694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_9458348a5acf2784975ca7afacbebb94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0aee538d9082d98e79ca6c062423913 = $(`<div id="html_e0aee538d9082d98e79ca6c062423913" style="width: 100.0%; height: 100.0%;">Water Station : Buti</div>`)[0];
+                popup_9458348a5acf2784975ca7afacbebb94.setContent(html_e0aee538d9082d98e79ca6c062423913);
+            
+        
+
+        circle_marker_75f4d5fd61d9aff5f8aba502d53da3b2.bindPopup(popup_9458348a5acf2784975ca7afacbebb94)
+        ;
+
+        
+    
+    
+            var circle_marker_abe8c6b9a554caa9e6beba7b247d42b7 = L.circleMarker(
+                [23.5681, 85.1333],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_ac596a3dcf2ad151bd7a77edba56b0c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_348f0e0f15fb331628d6e3b4f763be28 = $(`<div id="html_348f0e0f15fb331628d6e3b4f763be28" style="width: 100.0%; height: 100.0%;">Water Station : Burmoo</div>`)[0];
+                popup_ac596a3dcf2ad151bd7a77edba56b0c4.setContent(html_348f0e0f15fb331628d6e3b4f763be28);
+            
+        
+
+        circle_marker_abe8c6b9a554caa9e6beba7b247d42b7.bindPopup(popup_ac596a3dcf2ad151bd7a77edba56b0c4)
+        ;
+
+        
+    
+    
+            var circle_marker_41c7fcdd4b4bbb0617ca2b34b9820276 = L.circleMarker(
+                [23.3875, 85.3694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_f28aedd586460173352c9d8d9d1ce02f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b11291c87f3c856a9acff9cf2f8b4831 = $(`<div id="html_b11291c87f3c856a9acff9cf2f8b4831" style="width: 100.0%; height: 100.0%;">Water Station : Bunti</div>`)[0];
+                popup_f28aedd586460173352c9d8d9d1ce02f.setContent(html_b11291c87f3c856a9acff9cf2f8b4831);
+            
+        
+
+        circle_marker_41c7fcdd4b4bbb0617ca2b34b9820276.bindPopup(popup_f28aedd586460173352c9d8d9d1ce02f)
+        ;
+
+        
+    
+    
+            var circle_marker_827f2ded9ac404c5323b1b12ee1ca970 = L.circleMarker(
+                [23.1583, 85.5889],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_eb12cdc3bc54f4a8f957875200324bd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c561721d90887bd016fe0b8fd32cbae5 = $(`<div id="html_c561721d90887bd016fe0b8fd32cbae5" style="width: 100.0%; height: 100.0%;">Water Station : Bundu</div>`)[0];
+                popup_eb12cdc3bc54f4a8f957875200324bd9.setContent(html_c561721d90887bd016fe0b8fd32cbae5);
+            
+        
+
+        circle_marker_827f2ded9ac404c5323b1b12ee1ca970.bindPopup(popup_eb12cdc3bc54f4a8f957875200324bd9)
+        ;
+
+        
+    
+    
+            var circle_marker_dc746120ee689894c1df6e80ec666553 = L.circleMarker(
+                [23.4167, 85.4025],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_944eb354426d3474e648637d677d4f05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b08d4c11a94a4ba6215e8422134c81fb = $(`<div id="html_b08d4c11a94a4ba6215e8422134c81fb" style="width: 100.0%; height: 100.0%;">Water Station : Bit More</div>`)[0];
+                popup_944eb354426d3474e648637d677d4f05.setContent(html_b08d4c11a94a4ba6215e8422134c81fb);
+            
+        
+
+        circle_marker_dc746120ee689894c1df6e80ec666553.bindPopup(popup_944eb354426d3474e648637d677d4f05)
+        ;
+
+        
+    
+    
+            var circle_marker_eb655bed797b6c3fbbf8e0e78ce98602 = L.circleMarker(
+                [23.2628, 85.3117],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_2552f3e6145179a05c26082a21690f90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41cf08c0f7baedbdd55d4eef24210027 = $(`<div id="html_41cf08c0f7baedbdd55d4eef24210027" style="width: 100.0%; height: 100.0%;">Water Station : Bidge Frord</div>`)[0];
+                popup_2552f3e6145179a05c26082a21690f90.setContent(html_41cf08c0f7baedbdd55d4eef24210027);
+            
+        
+
+        circle_marker_eb655bed797b6c3fbbf8e0e78ce98602.bindPopup(popup_2552f3e6145179a05c26082a21690f90)
+        ;
+
+        
+    
+    
+            var circle_marker_21da7d7725567d694acd0181062c8586 = L.circleMarker(
+                [23.3061, 85.0211],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_312387da69efe8176b6b009f429b37cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d268b466178d60868e6ece90bfd4bbf = $(`<div id="html_2d268b466178d60868e6ece90bfd4bbf" style="width: 100.0%; height: 100.0%;">Water Station : Berro1</div>`)[0];
+                popup_312387da69efe8176b6b009f429b37cd.setContent(html_2d268b466178d60868e6ece90bfd4bbf);
+            
+        
+
+        circle_marker_21da7d7725567d694acd0181062c8586.bindPopup(popup_312387da69efe8176b6b009f429b37cd)
+        ;
+
+        
+    
+    
+            var circle_marker_21c80aeed2e211dfc2e928d110f590d6 = L.circleMarker(
+                [23.2667, 85.6861],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_b79f776dcea76c0d9f2c68f330cf0aa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca1c0a3cf3e0b020633be1efe80fb315 = $(`<div id="html_ca1c0a3cf3e0b020633be1efe80fb315" style="width: 100.0%; height: 100.0%;">Water Station : Barwadag</div>`)[0];
+                popup_b79f776dcea76c0d9f2c68f330cf0aa2.setContent(html_ca1c0a3cf3e0b020633be1efe80fb315);
+            
+        
+
+        circle_marker_21c80aeed2e211dfc2e928d110f590d6.bindPopup(popup_b79f776dcea76c0d9f2c68f330cf0aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_7ffd44f95e8dad20a32c0ce08b6e9beb = L.circleMarker(
+                [23.3728, 85.2792],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_4e8bdaacde4e0382e1527ac811a1afaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_423b31bc85e1580dd9335d9b8e2a8df7 = $(`<div id="html_423b31bc85e1580dd9335d9b8e2a8df7" style="width: 100.0%; height: 100.0%;">Water Station : Bajra</div>`)[0];
+                popup_4e8bdaacde4e0382e1527ac811a1afaf.setContent(html_423b31bc85e1580dd9335d9b8e2a8df7);
+            
+        
+
+        circle_marker_7ffd44f95e8dad20a32c0ce08b6e9beb.bindPopup(popup_4e8bdaacde4e0382e1527ac811a1afaf)
+        ;
+
+        
+    
+    
+            var circle_marker_067d43d53216cc8df18ba5f9e86f699f = L.circleMarker(
+                [23.3944, 85.5169],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_b07d0fc68d974822c2dd0a305747ab11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b67c78a4b6e9a2f16c50ff19384960f = $(`<div id="html_4b67c78a4b6e9a2f16c50ff19384960f" style="width: 100.0%; height: 100.0%;">Water Station : Angara1</div>`)[0];
+                popup_b07d0fc68d974822c2dd0a305747ab11.setContent(html_4b67c78a4b6e9a2f16c50ff19384960f);
+            
+        
+
+        circle_marker_067d43d53216cc8df18ba5f9e86f699f.bindPopup(popup_b07d0fc68d974822c2dd0a305747ab11)
+        ;
+
+        
+    
+    
+            var circle_marker_87e3225b4cc6732702f155f234b1c19a = L.circleMarker(
+                [23.3944, 85.5167],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_ad85a967692e78eb108bbded3f9f42aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09ed7b9f49b861fd28bd59b78844754a = $(`<div id="html_09ed7b9f49b861fd28bd59b78844754a" style="width: 100.0%; height: 100.0%;">Water Station : Angara</div>`)[0];
+                popup_ad85a967692e78eb108bbded3f9f42aa.setContent(html_09ed7b9f49b861fd28bd59b78844754a);
+            
+        
+
+        circle_marker_87e3225b4cc6732702f155f234b1c19a.bindPopup(popup_ad85a967692e78eb108bbded3f9f42aa)
+        ;
+
+        
+    
+    
+            var circle_marker_18a1dbebc8662ba0b8064d48ea1de3ff = L.circleMarker(
+                [23.3411, 85.3158],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_11efade54ce8befb54436b4448a88a89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97b31cde53f9ffa02ae42ab6e3f08c67 = $(`<div id="html_97b31cde53f9ffa02ae42ab6e3f08c67" style="width: 100.0%; height: 100.0%;">Water Station : AG Office</div>`)[0];
+                popup_11efade54ce8befb54436b4448a88a89.setContent(html_97b31cde53f9ffa02ae42ab6e3f08c67);
+            
+        
+
+        circle_marker_18a1dbebc8662ba0b8064d48ea1de3ff.bindPopup(popup_11efade54ce8befb54436b4448a88a89)
+        ;
+
+        
+    
+    
+            var circle_marker_63570912a14e26b281660972b74f431b = L.circleMarker(
+                [23.3061, 85.0208],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_9b264ae1b85597b94ad4851fcfe4c969 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5f00ffe8f7e2504533346ee0971c38b = $(`<div id="html_a5f00ffe8f7e2504533346ee0971c38b" style="width: 100.0%; height: 100.0%;">Water Station : Berro</div>`)[0];
+                popup_9b264ae1b85597b94ad4851fcfe4c969.setContent(html_a5f00ffe8f7e2504533346ee0971c38b);
+            
+        
+
+        circle_marker_63570912a14e26b281660972b74f431b.bindPopup(popup_9b264ae1b85597b94ad4851fcfe4c969)
+        ;
+
+        
+    
+    
+            var circle_marker_a1491ce48fa3fe32f9807314e8b75df9 = L.circleMarker(
+                [23.3878, 85.3694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_0f2377af71cc4fe08dc03dbc3acce5e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c21367fe9392e46b12c165a99856f2d3 = $(`<div id="html_c21367fe9392e46b12c165a99856f2d3" style="width: 100.0%; height: 100.0%;">Water Station : Buti</div>`)[0];
+                popup_0f2377af71cc4fe08dc03dbc3acce5e3.setContent(html_c21367fe9392e46b12c165a99856f2d3);
+            
+        
+
+        circle_marker_a1491ce48fa3fe32f9807314e8b75df9.bindPopup(popup_0f2377af71cc4fe08dc03dbc3acce5e3)
+        ;
+
+        
+    
+    
+            var circle_marker_b655fff34f13ff931b970aa4d9d5cd93 = L.circleMarker(
+                [23.5681, 85.1333],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_25a533d41f368d74853ef12fbb330fb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8576821cacaf06eca902c6c0cc5f5f4f = $(`<div id="html_8576821cacaf06eca902c6c0cc5f5f4f" style="width: 100.0%; height: 100.0%;">Water Station : Burmoo</div>`)[0];
+                popup_25a533d41f368d74853ef12fbb330fb4.setContent(html_8576821cacaf06eca902c6c0cc5f5f4f);
+            
+        
+
+        circle_marker_b655fff34f13ff931b970aa4d9d5cd93.bindPopup(popup_25a533d41f368d74853ef12fbb330fb4)
+        ;
+
+        
+    
+    
+            var circle_marker_0f8a87064dece523264caec365adfd22 = L.circleMarker(
+                [23.3875, 85.3694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_3429bc12f3fdf944c65a7ceac0cf228a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37aae955b9873d9262b157ffc603324d = $(`<div id="html_37aae955b9873d9262b157ffc603324d" style="width: 100.0%; height: 100.0%;">Water Station : Bunti</div>`)[0];
+                popup_3429bc12f3fdf944c65a7ceac0cf228a.setContent(html_37aae955b9873d9262b157ffc603324d);
+            
+        
+
+        circle_marker_0f8a87064dece523264caec365adfd22.bindPopup(popup_3429bc12f3fdf944c65a7ceac0cf228a)
+        ;
+
+        
+    
+    
+            var circle_marker_c80af06f2b59f96c9d848ee698173f21 = L.circleMarker(
+                [23.1583, 85.5889],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_2728a62feb6ce8aef59c7c8000e43ae9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37c39e74e4ae459ba30b84f05803247b = $(`<div id="html_37c39e74e4ae459ba30b84f05803247b" style="width: 100.0%; height: 100.0%;">Water Station : Bundu</div>`)[0];
+                popup_2728a62feb6ce8aef59c7c8000e43ae9.setContent(html_37c39e74e4ae459ba30b84f05803247b);
+            
+        
+
+        circle_marker_c80af06f2b59f96c9d848ee698173f21.bindPopup(popup_2728a62feb6ce8aef59c7c8000e43ae9)
+        ;
+
+        
+    
+    
+            var circle_marker_17feea550216eabeee870f44e0bc4a12 = L.circleMarker(
+                [23.4167, 85.4025],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_e1b4b8138daa752ea7afbde17f8f6f0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1824575af9091d355ff56577517ad1bc = $(`<div id="html_1824575af9091d355ff56577517ad1bc" style="width: 100.0%; height: 100.0%;">Water Station : Bit More</div>`)[0];
+                popup_e1b4b8138daa752ea7afbde17f8f6f0c.setContent(html_1824575af9091d355ff56577517ad1bc);
+            
+        
+
+        circle_marker_17feea550216eabeee870f44e0bc4a12.bindPopup(popup_e1b4b8138daa752ea7afbde17f8f6f0c)
+        ;
+
+        
+    
+    
+            var circle_marker_a0096c49c3161ef92253661b8a279525 = L.circleMarker(
+                [23.2628, 85.3117],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_24efc027cb7cccb0b60a5bbcdc35e1fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a2013cac6f71d558d26afd7ca348c62 = $(`<div id="html_5a2013cac6f71d558d26afd7ca348c62" style="width: 100.0%; height: 100.0%;">Water Station : Bidge Frord</div>`)[0];
+                popup_24efc027cb7cccb0b60a5bbcdc35e1fd.setContent(html_5a2013cac6f71d558d26afd7ca348c62);
+            
+        
+
+        circle_marker_a0096c49c3161ef92253661b8a279525.bindPopup(popup_24efc027cb7cccb0b60a5bbcdc35e1fd)
+        ;
+
+        
+    
+    
+            var circle_marker_1c07f5f3d09d3a4683853b0d4bd1c98f = L.circleMarker(
+                [23.3061, 85.0211],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_5a97d7ed66688053ef4e91a048b52990 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_908efef22bd1719e947dd49985acb18b = $(`<div id="html_908efef22bd1719e947dd49985acb18b" style="width: 100.0%; height: 100.0%;">Water Station : Berro1</div>`)[0];
+                popup_5a97d7ed66688053ef4e91a048b52990.setContent(html_908efef22bd1719e947dd49985acb18b);
+            
+        
+
+        circle_marker_1c07f5f3d09d3a4683853b0d4bd1c98f.bindPopup(popup_5a97d7ed66688053ef4e91a048b52990)
+        ;
+
+        
+    
+    
+            var circle_marker_3b4c6a82a703c0e9748bb7892a251474 = L.circleMarker(
+                [23.2667, 85.6861],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_758145d9b53a2782af0cdf27c41e6900 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27958f62ab1a4621a1277f0cbb8fcdbf = $(`<div id="html_27958f62ab1a4621a1277f0cbb8fcdbf" style="width: 100.0%; height: 100.0%;">Water Station : Barwadag</div>`)[0];
+                popup_758145d9b53a2782af0cdf27c41e6900.setContent(html_27958f62ab1a4621a1277f0cbb8fcdbf);
+            
+        
+
+        circle_marker_3b4c6a82a703c0e9748bb7892a251474.bindPopup(popup_758145d9b53a2782af0cdf27c41e6900)
+        ;
+
+        
+    
+    
+            var circle_marker_10654200ea0b5943c2c8028163b2b87f = L.circleMarker(
+                [23.3728, 85.2792],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_12557dfb7217118c48758f4827ad44c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c6734f672dafdbc592649724c9ae3c7 = $(`<div id="html_0c6734f672dafdbc592649724c9ae3c7" style="width: 100.0%; height: 100.0%;">Water Station : Bajra</div>`)[0];
+                popup_12557dfb7217118c48758f4827ad44c0.setContent(html_0c6734f672dafdbc592649724c9ae3c7);
+            
+        
+
+        circle_marker_10654200ea0b5943c2c8028163b2b87f.bindPopup(popup_12557dfb7217118c48758f4827ad44c0)
+        ;
+
+        
+    
+    
+            var circle_marker_660dc24db50bc694729c341983ceb826 = L.circleMarker(
+                [23.3944, 85.5169],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_ca47bf45a7fefb553ca9675a5369e49a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bc48c6e39198abd1ece5a59149c6d39 = $(`<div id="html_3bc48c6e39198abd1ece5a59149c6d39" style="width: 100.0%; height: 100.0%;">Water Station : Angara1</div>`)[0];
+                popup_ca47bf45a7fefb553ca9675a5369e49a.setContent(html_3bc48c6e39198abd1ece5a59149c6d39);
+            
+        
+
+        circle_marker_660dc24db50bc694729c341983ceb826.bindPopup(popup_ca47bf45a7fefb553ca9675a5369e49a)
+        ;
+
+        
+    
+    
+            var circle_marker_6c181846879b83691894c5e7a779dfd9 = L.circleMarker(
+                [23.3944, 85.5167],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_3f50d4bc205605385e5e8e9113800954 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07c455ed73f1d582c08b11c8351a03fc = $(`<div id="html_07c455ed73f1d582c08b11c8351a03fc" style="width: 100.0%; height: 100.0%;">Water Station : Angara</div>`)[0];
+                popup_3f50d4bc205605385e5e8e9113800954.setContent(html_07c455ed73f1d582c08b11c8351a03fc);
+            
+        
+
+        circle_marker_6c181846879b83691894c5e7a779dfd9.bindPopup(popup_3f50d4bc205605385e5e8e9113800954)
+        ;
+
+        
+    
+    
+            var circle_marker_9c078338b8afc8f610c35fdb90b7dc65 = L.circleMarker(
+                [23.3411, 85.3158],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_eabc4748293ea43f37349645b1d5dfd3);
+        
+    
+        var popup_ede60a8a3f1a0d052baa5d5a75911b38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ae498e39fa1b7895e103b09e99c6d88 = $(`<div id="html_1ae498e39fa1b7895e103b09e99c6d88" style="width: 100.0%; height: 100.0%;">Water Station : AG Office</div>`)[0];
+                popup_ede60a8a3f1a0d052baa5d5a75911b38.setContent(html_1ae498e39fa1b7895e103b09e99c6d88);
+            
+        
+
+        circle_marker_9c078338b8afc8f610c35fdb90b7dc65.bindPopup(popup_ede60a8a3f1a0d052baa5d5a75911b38)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,143 @@
+{% extends "layout.html" %} {% block content %}
+
+<!-- Checking quality parameters -->
+<form class="form-1" method="POST" action="{{url_for('predictor')}}">
+  <div class="Water-portable">
+    <div class="portable">
+      <h2 class="section__title">CHECK WATER POTABILITY</h2>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11 form-label">pH</label>
+          <input
+            type="number"
+            name="phvalue"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Hardness</label>
+          <input
+            type="number"
+            name="hardness"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Solid</label>
+          <input
+            type="number"
+            name="solids"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Chloramines</label>
+          <input
+            type="text"
+            name="chloramines"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Sulphate</label>
+          <input
+            type="text"
+            name="sulphates"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Conductivity</label>
+          <input
+            type="text"
+            name="conductivity"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Organic Carbon</label>
+          <input
+            type="text"
+            name="organiccarbon"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Trihalomethanes</label>
+          <input
+            type="text"
+            name="trihalomethanes"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1">
+        <div class="form-2">
+          <label for="inputEmail4" class="form-11">Turbidity</label>
+          <input
+            type="text"
+            name="turbidity"
+            class="form-control"
+            id="inputEmail4"
+          />
+        </div>
+      </div>
+      <div class="p-1 form-1">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          href="{{url_for('predictor')}}"
+        >
+          Submit
+        </button>
+      </div>
+      <br />
+      <div class="prediction-water">
+        <div class="message">
+          {% if problems %}
+          <div class="alert alert msg" role="alert">
+            <h3 style="font-family: 'Roboto Slab', serif">{{messege1}}</h3>
+          </div>
+          {%endif%} {% for p in problems %}
+          <div class="alert alert msg" role="alert">
+            <h2 style="font-family: 'Alkatra', cursive">{{solutions[p]}}</h2>
+            <br />
+          </div>
+          {% endfor %} {% if deficiency %}
+          <div class="alert alert msg" role="alert">
+            <h3 style="font-family: 'Roboto Slab', serif">{{messege2}}</h3>
+          </div>
+          {%endif%}
+          <div class="alert alert msg" role="alert">
+            <h3 style="font-family: 'Roboto Slab', serif">{{messege}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<!-- End -->
+
+{% endblock content %}
