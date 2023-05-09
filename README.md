@@ -6,6 +6,6 @@ Steps to use the app :
 
 Download the repo in zip file.
 
-Run WaterBodyApi.py file. Make sure you have flask server set up on your pc.
+Run WaterBodyApi.py file. Make sure you have flask server set up on your PC.
 
 You can now explore the website.
