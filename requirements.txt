@@ -1,0 +1,13 @@
+geocoder
+geopy
+sklearn
+pandas
+pickle
+folium
+time
+OSMPythonTools
+time
+math
+googlesearch
+wolframalpha
+qrcode
